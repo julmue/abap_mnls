@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>parallel minimal</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZJFM_PARALLEL_MINIMALTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZJFM_PARALLEL_MINIMAL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_JFM_COUNT_DTAB_ENTRIES</FUNCNAME>
+     <SHORT_TEXT>count table entries</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_TABNAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TABNAME</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_LINES</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT8</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>TABLE_NOT_EXISTS</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_TABNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>tabname</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_LINES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>line count</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TABLE_NOT_EXISTS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>database table does not exist</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,3 @@
+FUNCTION-POOL ZJFM_PARALLEL_MINIMAL.        "MESSAGE-ID ..
+
+* INCLUDE LZJFM_PARALLEL_MINIMALD...         " Local class definition
